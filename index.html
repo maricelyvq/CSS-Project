@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="script" href="email.js">
+  <title>CSS Project</title>
+</head>
+
+<body>
+  <header class="header">
+    <div>
+      <label>Orange Mail</label>
+      <input class="search" type="search"> <button>&#128269;</button>
+    </div>
+  </header>
+  <div class="grid-container">
+    <nav class="nav">
+      <div>
+        <img src="assets/user.png" style="height: auto; width: 150px;" alt="">
+        <h3> Welcome, Jen </h3>
+        <button class="compose">Compose</button>
+      </div>
+      <div>
+        <ul>
+          <li><a href="#section1">Inbox&nbsp;&#9993; (1)</a></li>
+          <li><a href="#section2">Tagged&nbsp;&#9873;</a></li>
+          <li><a href="#section3">Important</a></li>
+          <li><a href="#section4">Sent Mail</a></li>
+          <li><a href="#section3">Draft</a></li>
+          <li><a href="#section4">Trash</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="inbox" id="inbox">
+      <div class="item" style="background-color: antiquewhite;">
+        <input type="checkbox">
+        <div class="col sender">Alice Johnson</div>
+        <div class="col subject">Meeting Rescheduled: New Time and Details</div>
+        <div class="col date">Nov 4, 2024</div>
+        <div class="col date">&#9993;</div>
+      </div>
+    </div>
+    <script src="email.js"></script>
+    <main class="main">
+      <div></div>
+      <div><strong>To:</strong> recipient@example.com</div>
+      <div><strong>From:</strong> sender@example.com</div>
+      <div><strong>Subject:</strong> Meeting Reminder</div>
+      <div>
+        <h1>Hello [Recipient's Name],</h1>
+      </div>
+      <div>
+        <p>
+          This is a reminder for our upcoming meeting scheduled for <strong>November 10th, 2024, at 3:00 PM</strong>.
+          Please let me know if you need to reschedule or if there’s anything specific you’d like to discuss.
+        </p>
+        <p>Looking forward to your confirmation.</p>
+        <p>Best regards,</p>
+        <p><strong>Sender's Name</strong></p>
+      </div>
+      <div>
+        <textarea class="textemail"></textarea><br>
+        <button class="compose">Send Email</button>
+      </div>
+    </main>
+
+    <footer class="footer"> ©Copyright 2024. All rights reserved</footer>
+  </div>
+
+
+</body>
+
+</html>

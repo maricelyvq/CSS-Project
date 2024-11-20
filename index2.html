@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS Project</title>
+</head>
+<div class="grid-container">
+  <header class="header">
+    <h1>Mail</h1>
+  </header>
+  <nav class="nav">
+    <div>
+      <img src="assets/user.png" style="height: auto; width: 150px;">
+      <h3> Welcome, Jen </h3>
+      <button class="compose">Compose</button>
+    </div>
+    <div>
+    <ul>
+      <li><a href="#section1">Inbox&nbsp;&#9993; (1)</a></li>
+      <li><a href="#section2">Tagged&nbsp;&#9873;</a></li>
+      <li><a href="#section3">Important</a></li>
+      <li><a href="#section4">Sent Mail</a></li>
+      <li><a href="#section3">Draft</a></li>
+      <li><a href="#section4">Trash</a></li>
+    </ul>
+    </div>
+  </nav>
+  <div class="inbox">
+    <div>
+      <input class="search" type="search"> <button>&#128269;</button>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <div class="col sender">Alice Johnson</div>
+      <div class="col subject">Meeting Rescheduled: New Time and Details</div>
+      <div class="col date">Nov 4, 2024</div>
+      <div class="col date">&#9993;</div>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <div class="col sender">Allison Smith</div>
+      <div class="col subject">Important: Policy Updates Effective Next Month</div>
+      <div class="col date">Nov 4, 2024</div>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <div class="col sender">Maricely Villalobos</div>
+      <div class="col subject">Meeting Update</div>
+      <div class="col date">Nov 4, 2024</div>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <div class="col sender">Javier Torres</div>
+      <div class="col subject">Your Monthly Report is Ready for Review</div>
+      <div class="col date">Nov 4, 2024</div>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <div class="col sender">Carmen Sanchez</div>
+      <div class="col subject">Action Required: Verify Your Account Information</div>
+      <div class="col date">Nov 4, 2024</div>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <div class="col sender">Candice White</div>
+      <div class="col subject">Offer: Get 25% Off on Your Next Purchase</div>
+      <div class="col date">Nov 4, 2024</div>
+    </div>
+  </div>
+
+
+  <main class="main">Main Content
+    <div><strong>To:</strong> recipient@example.com</div>
+    <div><strong>From:</strong> sender@example.com</div>
+    <div><strong>Subject:</strong> Meeting Reminder</div>
+    <div>
+      <h1>Hello [Recipient's Name],</h1>
+    </div>
+    <div>
+      <p>
+        This is a reminder for our upcoming meeting scheduled for <strong>November 10th, 2024, at 3:00 PM</strong>.
+        Please let me know if you need to reschedule or if there’s anything specific you’d like to discuss.
+      </p>
+      <p>Looking forward to your confirmation.</p>
+      <p>Best regards,</p>
+      <p><strong>Sender's Name</strong></p>
+    </div>
+    <div>
+      <textarea class="search"></textarea>
+      <button class="compose">Send Email</button>
+    </div>
+  </main>
+  <footer class="footer">Footer</footer>
+</div>
+
+</html>
