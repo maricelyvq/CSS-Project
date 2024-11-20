@@ -1,3 +1,6 @@
+
+
+
 :root {
   --background-color: rgba(235, 178, 97, 0.916);
   --button-and-links-color: rgb(15, 52, 10);
@@ -9,12 +12,11 @@
   --padding-base: 20px;
   --font-size-large:22pt;
   --font-size-medium: 1.05em;
-  --font-size-small: 1em;
+  --font-size-small: 80%;
   --font-family-title: Arial, sans-serif;
   --font-family-content: Arial, sans-serif;
   --border-radius: 2rem;
 }
-
 
 
 * {
@@ -33,7 +35,7 @@
 }
 
 .search {
-  width: 20rem;
+  width: 80%;
   height: 30px;
   border: 3px solid rgba(0, 0, 0, 0.336);
   padding: 10px;
@@ -73,6 +75,7 @@
   display: block ;
   grid-area: inbox;
   height: 85vh;
+  width: 100%;
   padding: 15px;
   overflow-y: auto;
   justify-items: center;
@@ -82,7 +85,7 @@
           display: grid;
           grid-template-columns: 30px 1fr 2fr 1fr 20px;
           width: 90%;
-          margin: 20px;
+          margin: 1%;
           border: 1px solid #ccc;
           padding: var(--padding-base) ;
           font-size: var(--font-size-small);
@@ -181,3 +184,22 @@ textarea {
   margin-bottom: 10px;
 }
 
+/* Mobile layout */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 100%;
+    grid-row: auto;
+    grid-template-areas:
+      "header"
+      "nav"
+      "inbox"
+      "main"
+      "footer";
+      gap:5px;
+  }
+
+
+  footer {
+    font-size: 14px; /* Smaller font for footer */
+  }
+}
