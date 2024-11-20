@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="script" href="email.js">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Send+Flowers&family=Yatra+One&display=swap" rel="stylesheet">
   <title>CSS Project</title>
 </head>
 
-<body>
+<body>  
   <header class="header">
     <div>
       <img src="assets/emailorangelogo.jpg" style="height: 3em; width: auto;" alt="">    
-    </div><h4 >Orange Mail</h4>
+    </div>
+    <div class="tittle">OrangeMail</div>
   </header>
   <div class="grid-container">
     <nav class="nav">
@@ -48,7 +51,8 @@
       </div>
     </nav>
     <div class="inbox" id="inbox">
-      <input class="search" type="search"> <button>&#128269;</button>
+      <div><input class="search" type="search"> <button>&#128269;</button></div>
+      
       <div class="item" style="background-color: antiquewhite;">
         <input type="checkbox">
         <div class="sender"><a href="#">Johnson</a></div>

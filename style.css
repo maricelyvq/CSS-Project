@@ -1,13 +1,13 @@
 :root {
   --background-color: rgba(235, 178, 97, 0.916);
-  --button-and-links-color: rgb(217, 122, 39);
+  --button-and-links-color: rgb(15, 52, 10);
   --form-bg-color: #d4dbe678;
   --border-color: #0a1f44;
   --primary-color: #0a1f44;
   --secondary-color:rgba(240, 234, 234, 0.888);
   --text-color: #4f4e4e;
   --padding-base: 20px;
-  --font-size-large:22pts
+  --font-size-large:22pt;
   --font-size-medium: 1.05em;
   --font-size-small: 1em;
   --font-family-title: Arial, sans-serif;
@@ -25,7 +25,12 @@
   color:var(--text-color);
  
 }
-
+.tittle{
+  font-family: "Josefin Slab", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25pt;
+}
 
 .search {
   width: 20rem;
@@ -40,7 +45,7 @@
   display: grid;
   gap: 10px;
   grid-template-columns: 15% 1fr 1fr;
-  grid-row:5% 80% 5%;
+  grid-row:5% 80% auto;
   grid-template-areas:
    "header header header"
     "nav inbox main"
@@ -117,6 +122,7 @@ li a:hover {
   height: 40px;
   width: 150px;
   color: #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-size: var(--font-size-medium);
   background-color: var(--button-and-links-color); 
 }
@@ -174,3 +180,4 @@ textarea {
   height: 100px;
   margin-bottom: 10px;
 }
+
