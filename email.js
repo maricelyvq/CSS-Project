@@ -3,7 +3,7 @@ console.log("Script loaded!");
 async function loadEmails() {
     try {
       // Carga el archivo JSON
-      const response = await fetch('emails.json');
+      const response = await fetch('/assets/emails.json');
       const emails = await response.json();
   
       // Selecciona el contenedor donde se mostrarán los datos
@@ -21,6 +21,7 @@ async function loadEmails() {
         // Crea los campos dinámicamente
         const senderDiv = document.createElement('div');
         senderDiv.textContent = ` ${email.sender}`;
+        senderDiv.className="sender";
   
         const subjectDiv = document.createElement('div');
         subjectDiv.textContent = `${email.subject}`;
