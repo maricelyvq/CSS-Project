@@ -1,0 +1,44 @@
+[ 
+    {
+      "sender": "Alice Johnson",
+      "subject": "Meeting Reminder",
+      "date": "2024-01-15"
+    },
+    {
+      "sender": "Bob Smith",
+      "subject": "Offer: 50% Off This Weekend",
+      "date": "2024-03-22"
+    },
+    {
+      "sender": "Candice White",
+      "subject": "Monthly Newsletter",
+      "date": "2024-06-10"
+    },
+    {
+      "sender": "David Brown",
+      "subject": "Upcoming Event Details",
+      "date": "2024-09-05"
+    },
+    {
+      "sender": "Eva Green",
+      "subject": "Project Update",
+      "date": "Nov 5, 2024"
+    },
+    {
+        "sender": "David Brown",
+        "subject": "Welcome to Our Service",
+        "date": "Jan 18, 2024"
+      },
+      {
+        "sender": "Grace Adams",
+        "subject": "Meeting Reminder",
+        "date": "May 9, 2024"
+      },
+      {
+        "sender": "Ivy Lee",
+        "subject": "Monthly Newsletter",
+        "date": "Jul 25, 2024"
+      }
+
+]
+  

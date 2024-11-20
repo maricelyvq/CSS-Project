@@ -12,8 +12,7 @@
 <body>
   <header class="header">
     <div>
-      <label>Orange Mail</label>
-      <input class="search" type="search"> <button>&#128269;</button>
+     <h1 >Orange Mail</h1>
     </div>
   </header>
   <div class="grid-container">
@@ -35,9 +34,10 @@
       </div>
     </nav>
     <div class="inbox" id="inbox">
+      <input class="search" type="search"> <button>&#128269;</button>
       <div class="item" style="background-color: antiquewhite;">
         <input type="checkbox">
-        <div class="col sender">Alice Johnson</div>
+        <div class="sender"><a href="#">Johnson</a></div>
         <div class="col subject">Meeting Rescheduled: New Time and Details</div>
         <div class="col date">Nov 4, 2024</div>
         <div class="col date">&#9993;</div>
@@ -49,17 +49,18 @@
       <div><strong>To:</strong> recipient@example.com</div>
       <div><strong>From:</strong> sender@example.com</div>
       <div><strong>Subject:</strong> Meeting Reminder</div>
+
+      <div class="parag">    
       <div>
         <h1>Hello [Recipient's Name],</h1>
       </div>
-      <div>
         <p>
-          This is a reminder for our upcoming meeting scheduled for <strong>November 10th, 2024, at 3:00 PM</strong>.
-          Please let me know if you need to reschedule or if there’s anything specific you’d like to discuss.
-        </p>
-        <p>Looking forward to your confirmation.</p>
-        <p>Best regards,</p>
-        <p><strong>Sender's Name</strong></p>
+          This is a reminder for our upcoming meeting scheduled for <strong>November 10th, 2024, at 3:00 PM</strong>.</p>
+          <p> let me know if you need to reschedule or if there’s anything specific you’d like to discuss.</p>
+              <p> Media queries can target specific screen sizes, orientations, and resolutions to optimize the layout and content of a website. For example, you can use a media query to apply styles when the screen size is less than 600 pixels. </p>
+              <p>Looking forward to your confirmation.</p>
+          <p>Best regards,</p>
+        <strong>Sender's Name</strong></p>
       </div>
       <div>
         <textarea class="textemail"></textarea><br>
