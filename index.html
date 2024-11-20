@@ -12,16 +12,30 @@
 <body>
   <header class="header">
     <div>
-     <h1 >Orange Mail</h1>
-    </div>
+      <img src="assets/emailorangelogo.jpg" style="height: 3em; width: auto;" alt="">    
+    </div><h4 >Orange Mail</h4>
   </header>
   <div class="grid-container">
     <nav class="nav">
       <div>
         <img src="assets/user.png" style="height: auto; width: 150px;" alt="">
-        <h3> Welcome, Jen </h3>
-        <button class="compose">Compose</button>
+        <h3> Welcome, Maria Lopez </h3>
+        <button class="compose" id="openPopupBtn">Compose</button>   
+        <!-- Overlay for background blur -->
+        <div id="overlay"></div>
+        <!-- Pop-up window -->
+        <div id="emailPopup">
+          <h2>Compose Email</h2>
+          <label for="emailSubject">Subject:</label>
+          <input type="text" id="emailSubject" placeholder="Enter subject" style="width: 100%; margin-bottom: 10px;">
+          <label for="emailBody">Message:</label>
+          <textarea id="emailBody" placeholder="Write your message here..."></textarea>
+          <button id="sendEmailBtn">Send Email</button>
+          <button id="closePopupBtn">Close</button>
+        </div>
+        <script src="popup.js"></script>
       </div>
+
       <div>
         <ul>
           <li><a href="#section1">Inbox&nbsp;&#9993; (1)</a></li>
@@ -64,7 +78,7 @@
       </div>
       <div>
         <textarea class="textemail"></textarea><br>
-        <button class="compose">Send Email</button>
+        <button class="compose" id="sendEmailBtn">Send Email</button>
       </div>
     </main>
 

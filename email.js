@@ -8,9 +8,11 @@ async function loadEmails() {
   
       // Selecciona el contenedor donde se mostrarán los datos
       const container = document.getElementById('inbox');
-  
+      
+      let counter = 0 ;
       // Itera sobre cada correo en el JSON y crea su estructura
       emails.forEach(email => {
+        counter++;
         const itemDiv = document.createElement('div');
         itemDiv.className = 'item';   
 

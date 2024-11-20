@@ -1,6 +1,6 @@
 :root {
-  --background-color: hwb(35 38% 8% / 0.855);
-  --button-and-links-color: #d97a27;
+  --background-color: rgba(235, 178, 97, 0.916);
+  --button-and-links-color: rgb(217, 122, 39);
   --form-bg-color: #d4dbe678;
   --border-color: #0a1f44;
   --primary-color: #0a1f44;
@@ -18,7 +18,7 @@
 
 
 * {
-  margin: 2rm;
+  /* margin: 2rm; */
   padding: 1px;
   box-sizing: border-box;
   font-family: var(--font-family-content);
@@ -49,18 +49,16 @@
 
 .header {
   grid-area: header;
-  display: flexbox;
-  height: 3em;
+  display: flex;
+  height: 3.5em;
   background-color: var(--background-color);
   color: var(--text-color);
-  align-content: center
- 
+ }
 
-}
 .nav {
   grid-area: nav;
   display: grid;
-  grid-template-rows: 250px 1fr;
+  grid-template-rows: 40% 1fr;
   justify-items: center;
   background-color:var(--secondary-color);
  
@@ -115,7 +113,6 @@ li a:hover {
   text-decoration: underline;
 }
 
-
 .compose {
   height: 40px;
   width: 150px;
@@ -140,4 +137,40 @@ li a:hover {
 .parag{
   line-height: 2;
   overflow-y: scroll;
+}
+/* Styling the pop-up window */
+#emailPopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 1000;
+}
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+button,
+.compose {
+  padding: 10px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
 }
