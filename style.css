@@ -20,7 +20,6 @@
 
 
 * {
-  /* margin: 2rm; */
   padding: 1px;
   box-sizing: border-box;
   font-family: var(--font-family-content);
@@ -58,15 +57,15 @@
   grid-area: header;
   display: flex;
   height: 3.5em;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  
+
  }
 
 .nav {
   grid-area: nav;
-  display: grid;
+  display:flexbox;
   grid-template-rows: 40% 1fr;
-  justify-items: center;
+  justify-content: center;
   background-color:var(--secondary-color);
  
 }
@@ -79,7 +78,7 @@
   padding: 15px;
   overflow-y: auto;
   justify-items: center;
-  background-color: var(--background-color);
+
 }
         .item {
           display: grid;
@@ -98,6 +97,7 @@
           }
 .main {
   grid-area: main;
+  padding: var(--padding-base) ;
   display: grid;
   height: 85vh;
   grid-template-rows: 1fr 1fr;
@@ -125,19 +125,19 @@ li a:hover {
   height: 40px;
   width:auto;
   color: #ccc;
+  padding: calc(var(--padding-base)/2);
+  margin-left: 10%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-size: var(--font-size-medium);
   background-color: var(--button-and-links-color); 
-  padding: 10px;
-  margin: 10px;
   cursor: pointer;
 }
 
 .footer {
   grid-area: footer;
-  color: white ;
   text-align: center;
-  background-color: var(--background-color);
+  color: whitesmoke;
+
 
 }
 .textemail {
@@ -159,7 +159,6 @@ li a:hover {
   transform: translate(-50%, -50%);
   width: 400px;
   padding: 20px;
-  background-color: var(--background-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   z-index: 1000;
@@ -175,12 +174,15 @@ li a:hover {
   z-index: 999;
 }
 
-
-textarea {
-  width: 100%;
-  height: 100px;
-  margin-bottom: 10px;
+/* Background Color  */
+#emailPopup,
+.footer,
+.inbox,
+.header
+{
+  background-color: var(--background-color) ;
 }
+
 
 /* Mobile layout */
 @media (max-width: 768px) {
